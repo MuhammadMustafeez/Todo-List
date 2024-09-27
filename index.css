@@ -41,26 +41,41 @@ div input{
     outline: none;
     color: black;
     border: 2px solid #ddd;
+    transition: border 0.3s;
 }
-div button {
+#button1{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
     display: block;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
-button:hover{
+#button1:hover{
     background-image: linear-gradient(rgb(78, 56, 156), rgb(102, 140, 214));
     color: white;
 }
 ul{
     list-style: none;
-    padding: 2px;
-    margin-top: 20px;
+    padding: 0;
+    max-height: 200px;
+    margin-bottom: 10px;
     text-align: left;
 }
-ul li {
-    margin-bottom: 10px;
+li {
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
     color: #ddd;
+}
+.remove-btn{
+    background-color: red;
+    color: #ddd;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+    cursor: pointer;
 }

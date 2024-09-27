@@ -1,14 +1,25 @@
-var textInput = document.getElementById("textFieldInput");
-var List = document.getElementById("list");
-var button = document.getElementById("button")
-button.addEventListener("click",function(){
-    var check = textInput.value.trim();
-    if(check !== ""){
-        var li = document.createElement("li");
-        li.textContent = textInput.value;
-        List.appendChild(li);
+var input = document.getElementById("textFieldInput");
+var button = document.getElementById("button1");
+var List = document.getElementById("list")
 
+button.addEventListener("click", function(){
+    var check = input.value.trim();
+    if (check !== "") {
+        // Add Task in List
+        var li = document.createElement("li");
+        li.textContent= check;
+        List.appendChild(li);
+        input.value = "";
+
+        //Add Remove Button
+        var remove = document.createElement("button");
+        remove.textContent="Remove";
+        remove.className="remove-btn";
+        li.appendChild(remove);
+        remove.addEventListener("click",function(){
+            List.removeChild(li);
+        });
     }else{
-        alert("Plz Add The Task!");
+        alert("Add Task Input!");
     }
 })
