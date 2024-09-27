@@ -8,7 +8,7 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background-color: aquamarine;
+    background-image: url("./image/bg-img.jpg");
 }
 div{
     width: 400px;
@@ -19,18 +19,23 @@ div{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    backdrop-filter:blur(15px);
 }
 div h1{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    color: #fff;
+
 }
 div input{
     width: 100%;
     padding: 5px;
     border-radius: 5px;
     margin-right: 5px; 
-    margin-bottom: 20px;       
+    margin-bottom: 20px;
+    outline: none;
+    border: 2px solid #ddd;
 }
 div button {
     border-radius: 5px;
@@ -42,4 +47,7 @@ div button {
 button:hover{
     background-color: #090808;
     color: white;
+}
+ul{
+    
 }
