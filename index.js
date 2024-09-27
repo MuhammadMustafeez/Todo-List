@@ -19,6 +19,9 @@ button.addEventListener("click", function(){
         remove.addEventListener("click",function(){
             List.removeChild(li);
         });
+
+        //Task Completed
+    
     }else{
         alert("Add Task Input!");
     }

@@ -17,13 +17,13 @@ body{
 div{
     width: 400px;
     margin: 0 auto;
-    border: 1px solid;
+    border: none;
     border-radius: 5px;
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    backdrop-filter:blur(15px);
+    backdrop-filter:blur(25px);
 }
 div h1{
     display: flex;
@@ -70,12 +70,17 @@ li {
     display: flex;
     justify-content: space-between;
     color: #ddd;
+    align-items: center;
 }
 .remove-btn{
-    background-color: red;
+    background-color: #e23232;
     color: #ddd;
     padding: 5px;
     width: auto;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
+}
+.remove-btn:hover{
+   background-color: #e82525;
 }
