@@ -8,29 +8,28 @@ button.addEventListener("click", function(){
         // Add Task in List
         var li = document.createElement("li");
         li.textContent= check;
-        List.appendChild(li);
         input.value = "";
         
         //Task Completed
         var compButton = document.createElement("button");
         compButton.textContent = "Done";
         compButton.className="comp-btn";
-        li.appendChild(compButton);
-        compButton.addEventListener("click", function(e){
-            var task = e.target.parentElement;
-            task.classList.toggle("completed");
+        compButton.addEventListener("click", function(){
+            li.classList.toggle("completed");
         });
-
+        
         //Add Remove Button
         var remove = document.createElement("button");
         remove.textContent="Remove";
         remove.className="remove-btn";
-        li.appendChild(remove);
         remove.addEventListener("click",function(){
             List.removeChild(li);
         });
-
-
+        List.appendChild(li);
+        li.appendChild(compButton);
+        li.appendChild(remove);
+        
+        
     }else{
         alert("Add Task Input!");
     }
