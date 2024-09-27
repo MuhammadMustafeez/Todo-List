@@ -67,7 +67,7 @@ li {
     padding: 10px;
     border-radius: 5px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     color: #ddd;
     align-items: center;
 }
@@ -94,8 +94,7 @@ li {
 .comp-btn:hover{
     background-color: #266ca8;
 }
-
-li .completed{
+ .completed {
     text-decoration: line-through;
-    color: #444b51;
+    color: #d2d5d8;
 }

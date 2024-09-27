@@ -16,8 +16,9 @@ button.addEventListener("click", function(){
         compButton.textContent = "Done";
         compButton.className="comp-btn";
         li.appendChild(compButton);
-        compButton.addEventListener("click", function(){
-            List.classList.toggle("completed");
+        compButton.addEventListener("click", function(e){
+            var task = e.target.parentElement;
+            task.classList.toggle("completed");
         });
 
         //Add Remove Button
