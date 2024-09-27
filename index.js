@@ -10,6 +10,15 @@ button.addEventListener("click", function(){
         li.textContent= check;
         List.appendChild(li);
         input.value = "";
+        
+        //Task Completed
+        var compButton = document.createElement("button");
+        compButton.textContent = "Done";
+        compButton.className="comp-btn";
+        li.appendChild(compButton);
+        compButton.addEventListener("click", function(){
+            List.classList.toggle("completed");
+        });
 
         //Add Remove Button
         var remove = document.createElement("button");
@@ -20,8 +29,7 @@ button.addEventListener("click", function(){
             List.removeChild(li);
         });
 
-        //Task Completed
-    
+
     }else{
         alert("Add Task Input!");
     }
