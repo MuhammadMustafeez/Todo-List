@@ -8,7 +8,6 @@ button.addEventListener("click", function(){
         // Add Task in List
         var li = document.createElement("li");
         li.textContent= check;
-        input.value = "";
         
         //Task Completed
         var compButton = document.createElement("button");
@@ -26,8 +25,10 @@ button.addEventListener("click", function(){
             List.removeChild(li);
         });
         List.appendChild(li);
-        li.appendChild(compButton);
-        li.appendChild(remove);
+        List.appendChild(compButton);
+        List.appendChild(remove);
+        input.value = "";
+        
         
         
     }else{
