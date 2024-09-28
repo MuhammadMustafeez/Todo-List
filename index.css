@@ -61,6 +61,8 @@ ul{
     max-height: 200px;
     margin-bottom: 10px;
     text-align: left;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 li {
@@ -86,8 +88,6 @@ li {
     background-color: #3888ce;
     color: #ddd;
     padding: 5px;
-    display: flex;
-    justify-content: center;
     width: auto;
     border-radius: 5px;
     cursor: pointer;

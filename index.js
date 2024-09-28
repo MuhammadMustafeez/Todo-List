@@ -23,12 +23,14 @@ button.addEventListener("click", function(){
         remove.className="remove-btn";
         remove.addEventListener("click",function(){
             List.removeChild(li);
+            List.removeChild(compButton);
+            List.removeChild(remove);
         });
         List.appendChild(li);
         List.appendChild(compButton);
         List.appendChild(remove);
         input.value = "";
-        
+
         
         
     }else{
